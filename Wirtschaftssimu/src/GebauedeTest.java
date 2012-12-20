@@ -19,7 +19,7 @@ public class GebauedeTest {
 		for(int i = 0; i<bank.size(); i++){
 			System.out.println(bank.get(i));
 			}
-		System.out.println("asfgafjd");
+		System.out.println("sa");
 	}
 
 }
