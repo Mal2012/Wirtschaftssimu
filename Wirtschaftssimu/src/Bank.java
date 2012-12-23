@@ -9,10 +9,11 @@ public class Bank extends Gebaeude{
 		Bank.listing = new ArrayList<Bank>();	
 	}
 	
-	public Bank(int posx, int posy, int size, int holdpersons, int moneybonus) {	
+	public Bank(int posx, int posy, int size, int holdpersons, int moneybonus, int moodbonus) {	
 		this.posx = posx;
 		this.posy = posy;
 		this.size = size;
+		this.moodbonus = moodbonus;
 		this.holdpersons = holdpersons;
 		this.moneybonus = moneybonus;
 		this.name = "Bank_"+(Bank.listing.size()+1);

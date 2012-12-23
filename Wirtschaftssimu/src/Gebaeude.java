@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Gebaeude {
 	protected int posx, posy, size, holdpersons, resourcebonus, moneybonus, moodbonus;
+	
 	protected String name, kind;
 	protected static ArrayList<Gebaeude> listing; 
 	
@@ -12,6 +13,15 @@ public class Gebaeude {
 		Wohnhaus.init();
 	}
 	
+	public static int getMoodbonus() {
+		int resultmood=0;
+		for(int i = 0; i < Gebaeude.listing.size(); i++) {
+			resultmood += Gebaeude.listing.get(i).moodbonus;
+		}
+		
+		return resultmood;
+	}
+
 	public static String getListing() {
 		String listing = "";
 		for(int i = 0; i < Gebaeude.listing.size(); i++) {

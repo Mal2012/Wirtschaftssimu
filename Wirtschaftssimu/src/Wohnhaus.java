@@ -9,12 +9,13 @@ public class Wohnhaus extends Gebaeude{
 		Wohnhaus.listing = new ArrayList<Wohnhaus>();	
 	}
 	
-	public Wohnhaus(int posx, int posy, int size, int holdpersons, int moneybonus) {	
+	public Wohnhaus(int posx, int posy, int size, int holdpersons, int moneybonus,int moodbonus) {	
 		this.posx = posx;
 		this.posy = posy;
 		this.size = size;
 		this.holdpersons = holdpersons;
 		this.moneybonus = moneybonus;
+		this.moodbonus= moodbonus;
 		this.name = "Wohnhaus_"+(Wohnhaus.listing.size()+1);
 		this.kind = "Wohngebäude";
 		Wohnhaus.listing.add(this);

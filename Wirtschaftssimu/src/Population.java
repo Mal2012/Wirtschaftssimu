@@ -1,8 +1,8 @@
 public class Population {
-	int mood; // Stimmung 1-10
+	static int mood; // Stimmung 1-10
 	int anzahl; //Bevölkerungsanzahl
-	int sterberate; // Sterberate in Prozent
-	int geburtenrate; // Geburtenrate in Prozent
+	static int sterberate; // Sterberate in Prozent
+	static int geburtenrate; // Geburtenrate in Prozent
 	
 	
 	public void berechneWachstum(){
@@ -11,7 +11,7 @@ public class Population {
 		this.anzahl = anzahl - tote + neugeborene;		
 	}
 	
-	public void berechneSterberate(){
+	public static void berechneSterberate(){
 		switch(mood){
 		case 1: sterberate = 90 +(int) (10*Math.random()); break;
 		case 2: sterberate = 80 +(int) (10*Math.random()); break;
@@ -27,7 +27,7 @@ public class Population {
 		
 	}
 	
-	public void berechneGeburtenrate(){
+	public static void berechneGeburtenrate(){
 		switch(mood){
 		case 10: geburtenrate = 90 +(int) (10*Math.random()); break;
 		case 9: geburtenrate = 80 +(int) (10*Math.random()); break;
@@ -42,8 +42,9 @@ public class Population {
 		}
 	}
 	
-	public void berechneStimmung(){
-		
+	public static void berechneStimmung(){
+		System.out.println(Gebaeude.getMoodbonus());
+		mood= Gebaeude.getMoodbonus()/10;
 		
 	}
 	

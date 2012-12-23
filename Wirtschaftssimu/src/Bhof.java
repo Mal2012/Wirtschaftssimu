@@ -8,10 +8,11 @@ public class Bhof extends Gebaeude{
 		Bhof.listing = new ArrayList<Bhof>();	
 	}
 	
-	public Bhof(int posx, int posy, int size, int holdpersons, int resourcebonus) {	
+	public Bhof(int posx, int posy, int size, int holdpersons, int resourcebonus, int moodbonus) {	
 		this.posx = posx;
 		this.posy = posy;
 		this.size = size;
+		this.moodbonus = moodbonus;
 		this.holdpersons = holdpersons;
 		this.resourcebonus = resourcebonus;
 		this.name = "Bauernhof_"+(Bhof.listing.size()+1);
