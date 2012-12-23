@@ -15,7 +15,7 @@ public class Bank extends Gebaeude{
 		this.size = size;
 		this.holdpersons = holdpersons;
 		this.moneybonus = moneybonus;
-		this.name = "Bank_"+Bank.listing.size()+1;
+		this.name = "Bank_"+(Bank.listing.size()+1);
 		this.kind = "Finanzwirtschaft";
 		Bank.listing.add(this);
 		Gebaeude.listing.add(this);

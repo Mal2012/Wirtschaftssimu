@@ -11,6 +11,8 @@ public class GebauedeTest {
 		new Bhof(5, 5, 5, 5, 5);
 		new Bank(5,5,5,5,5);
 		new Wohnhaus(5,5,5,50,10);
+		new Wohnhaus(5,5,5,50,10);
+		new Wohnhaus(5,5,5,50,10);
 		System.out.println(Gebaeude.getListing());
 		
 		System.out.println(Bank.getListing());//hmm.. it's not a bug it's a feature

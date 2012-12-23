@@ -14,7 +14,7 @@ public class Bhof extends Gebaeude{
 		this.size = size;
 		this.holdpersons = holdpersons;
 		this.resourcebonus = resourcebonus;
-		this.name = "Bauernhof_"+Bhof.listing.size()+1;
+		this.name = "Bauernhof_"+(Bhof.listing.size()+1);
 		this.kind = "Agrarwirtschaft";
 		Bhof.listing.add(this);
 		Gebaeude.listing.add(this);

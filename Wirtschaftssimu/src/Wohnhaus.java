@@ -15,7 +15,7 @@ public class Wohnhaus extends Gebaeude{
 		this.size = size;
 		this.holdpersons = holdpersons;
 		this.moneybonus = moneybonus;
-		this.name = "Wohnhaus_"+Wohnhaus.listing.size()+1;
+		this.name = "Wohnhaus_"+(Wohnhaus.listing.size()+1);
 		this.kind = "Wohngebäude";
 		Wohnhaus.listing.add(this);
 		Gebaeude.listing.add(this);
