@@ -9,8 +9,12 @@ public class GebauedeTest {
 		// TODO Auto-generated method stub
 		Gebaeude.init();
 		new Bhof(5, 5, 5, 5, 5);
+		new Bank(5,5,5,5,5);
+		System.out.println(Gebaeude.getListing());
 		
+		System.out.println(Bank.getListing());//hmm.. it's not a bug it's a feature
 		System.out.println(Bhof.getListing());
+		
 		//bank.add(new Bank(0, 0, 10, 2 ,5));
 		
 		/*
