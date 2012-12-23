@@ -9,6 +9,7 @@ public class Gebaeude {
 		Gebaeude.listing = new ArrayList<Gebaeude>();
 		Bhof.init();
 		Bank.init();
+		Wohnhaus.init();
 	}
 	
 	public static String getListing() {
